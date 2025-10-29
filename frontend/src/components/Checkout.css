@@ -1,0 +1,85 @@
+.checkout-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 500;
+  margin-right: 20px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: var(--transition);
+}
+
+.back-link:hover {
+  background-color: rgba(0, 212, 255, 0.1);
+  transform: translateX(-2px);
+}
+
+.back-link svg {
+  margin-right: 8px;
+}
+
+.checkout form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, var(--secondary-bg), var(--tertiary-bg));
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.checkout label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.checkout input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background-color: var(--primary-bg);
+  color: var(--text-color);
+  font-size: 16px;
+  transition: var(--transition);
+  box-sizing: border-box;
+}
+
+.checkout input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.2);
+}
+
+.checkout button {
+  background: linear-gradient(135deg, var(--accent-color), var(--accent-hover));
+  color: var(--text-color);
+  border: none;
+  padding: 14px 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: var(--transition);
+  margin-top: 10px;
+}
+
+.checkout button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
